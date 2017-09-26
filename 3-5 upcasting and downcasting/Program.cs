@@ -12,11 +12,6 @@ namespace _3_5_upcasting_and_downcasting
     {
         static void Main(string[] args)
         {
-            Shape shape = new Text(); // downcasting
-            Text text = (Text) shape;
-
-            //shape.Width;
-            //text.FontName;
         }
 
         public void Upcasting()
@@ -41,6 +36,15 @@ namespace _3_5_upcasting_and_downcasting
             list.Add(new Text());
 
             var another_list = new List<Shape>();
+        }
+
+        public void Downcasting()
+        {
+            Shape shape = new Text(); // downcasting
+            Text text = (Text)shape;
+
+            //shape.Width;
+            //text.FontName;
         }
     }
 }
